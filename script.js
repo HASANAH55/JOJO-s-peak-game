@@ -190,8 +190,8 @@ function killboth(bullet,enemy,container,enemycontainer){
     //enemy.style.backgroundColor = 'goldenrod';
     //enemy.lastChild.textContent = 'DEAD';
     if(enemy.id == 'player'){
-        document.getElementById("song").play();
-        document.getElementById("shit").pause();
+        document.getElementById("song").pause();
+        document.getElementById("shit").play();
         let audios = document.querySelectorAll('.yes');
         for(yes of audios){
             document.body.removeChild(yes);
@@ -226,7 +226,7 @@ function killboth(bullet,enemy,container,enemycontainer){
                     enemylunchtime = enemylunchtime * 0.95;
                     summon1();
                 }
-                if(counter == 30){document.getElementById("shit").play()}
+                if(counter == 30){document.getElementById("song").play()}
             }
         }catch(error){
             //idc about it
