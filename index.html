@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOJO's peak game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type=".jpg" href="download.jpg">
+</head>
+<body>
+    
+    <audio id="shit" src="shit.mp3"></audio>
+    <audio id="song" src="song.mp3" loop></audio>
+    <div id="container">
+        <div id="overlay">
+            <button id="restart">START THE GAME</button>
+        </div>
+        <div class="counter">
+            <p id="counter-max">highest score:00</p>
+            <p id="counter">Score:00</p>
+        </div>
+        <div id="player" class="friend"><!--<p>YOU</p>--></div>
+        <div id="enemycontainer">
+            <div id="row1" class="row"><div class="bombrow" id="bombrow1"></div></div>
+            <div id="row2" class="row"><div class="bombrow" id="bombrow2"></div></div>
+            <div id="row3" class="row"><div class="bombrow" id="bombrow3"></div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
