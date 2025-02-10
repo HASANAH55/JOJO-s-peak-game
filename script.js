@@ -8,8 +8,6 @@ let counterelement = document.getElementById('counter');
 let countermaxelement = document.getElementById("counter-max")
 let overlay = document.getElementById('overlay');
 let btn = document.getElementById("restart");
-let shit = document.getElementById("shit");
-let song = document.getElementById("song");
 let enemybombspeed = 100;
 let enemyspeed = 50;
 let enemylunchtime = 2000;
@@ -192,7 +190,8 @@ function killboth(bullet,enemy,container,enemycontainer){
     //enemy.style.backgroundColor = 'goldenrod';
     //enemy.lastChild.textContent = 'DEAD';
     if(enemy.id == 'player'){
-        shit.play();song.pause();
+        document.getElementById("song").play();
+        document.getElementById("shit").pause();
         let audios = document.querySelectorAll('.yes');
         for(yes of audios){
             document.body.removeChild(yes);
@@ -227,7 +226,7 @@ function killboth(bullet,enemy,container,enemycontainer){
                     enemylunchtime = enemylunchtime * 0.95;
                     summon1();
                 }
-                if(counter == 30){song.play()}
+                if(counter == 30){document.getElementById("shit").play()}
             }
         }catch(error){
             //idc about it
